@@ -1,24 +1,80 @@
-# README
+# cake_skill_log の ER 図
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type   | Options                |
+| ------------------ | ------ | ---------------------- |
+| name               | string | null:false             |
+| email              | string | unique:true,null:false |
+| encrypted_password | string | null:false             |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many skills
+- has_many comments
+- has_many user_messages
+- has_one purchase
 
-* Configuration
+## skills テーブル
 
-* Database creation
+| Column           | Type      | Options           |
+| ---------------- | --------- | ----------------- |
+| name             | string    | null:false        |
+| category_id      | integer   | null:false        |
+| formulation_text | text      | null:false        |
+| recipe_text      | text      | null:false        |
+| user             | reference | foreign_key: true |
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- belongs_to user
+- has_many comments
 
-* Services (job queues, cache servers, search engines, etc.)
+## comments テーブル
 
-* Deployment instructions
+| Column | Type      | Options           |
+| ------ | --------- | ----------------- |
+| text   | text      | null:false        |
+| user   | reference | foreign_key: true |
+| item   | reference | foreign_key: true |
 
-* ...
+### Association
+
+- belongs_to user
+- belongs_to skill
+
+## user_messages テーブル
+
+| Column | Type      | Options           |
+| ------ | --------- | ----------------- |
+| user   | reference | foreign_key: true |
+| item   | reference | foreign_key: true |
+
+### Association
+
+- belongs_to user
+- belongs_to message
+
+## messages テーブル
+
+| Column          | Type      | Options           |
+| --------------- | --------- | ----------------- |
+| text            | text      | null:false        |
+| user_id         | reference | foreign_key: true |
+| user_message_id | reference | foreign_key: true |
+
+### Association
+
+- has_many user_messages
+
+## purchases テーブル
+
+| Column         | Type      | Options           |
+| -------------- | --------- | ----------------- |
+| purchase_token | string    | null:false        |
+| customer_token | string    | null:false        |
+| user           | reference | foreign_key: true |
+
+### Association
+
+- belongs_to user
