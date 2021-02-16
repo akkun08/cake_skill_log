@@ -8,4 +8,8 @@ class User < ApplicationRecord
   validates_format_of :password, presence: true, with: PASSWORD_REGEX, message: "Password is invalid"
 
   validates :name, presence: true
+
+  has_many :skills
+  has_many :comments
+  has_one :purchase
 end
