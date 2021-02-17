@@ -1,0 +1,18 @@
+<header>
+  <div class="top-page-header">
+    <div class="top-page-logo">
+      <h1><%= link_to "CakeLog" ,root_path, class: "cakelog" %></h1>
+    </div>
+    <div class="sign-up">
+      <% if user_signed_in? %>
+      <%= "#{current_user.name}さんは、ログインしています。" %>
+      <%= link_to "ログアウト", destroy_user_session_path ,method: :delete ,class: "sign-up2"%>
+      <% else %>
+      <%= link_to "ログイン", new_user_session_path ,class: "sign-up2" %>
+      <%= link_to "新規登録", new_user_registration_path ,class: "sign-up2" %>
+      <% end %>
+      <div>
+
+      </div>
+
+</header>

@@ -1,15 +1,11 @@
-<h1 class="mt-4">CakeLog</h1>
-<% if user_signed_in? %>
-<%= "#{current_user.name}さんは、ログインしています。" %>
-<%= link_to "ログアウト", destroy_user_session_path, method: :delete%>
-<% else %>
-<%= link_to "新規登録", new_user_registration_path %>
-<%= link_to "ログイン", new_user_session_path %>
-<% end %>
+<%= render "shared/header" %>
+<div class="intro">
+  <%= image_tag("cake-intro2.jpg", class:"cake-intro") %>
+</div>
 <div>
   <%= link_to '投稿する', new_skill_path,method: :get  %>
 </div>
-
+<% if user_signed_in? %>
 <% @skills.each do |skill| %>
 <div class="skill">
   <div class="skill-image">
@@ -28,4 +24,5 @@
     <%= skill.recipe_text %>
   </div>
 </div>
+<% end %>
 <% end %>
