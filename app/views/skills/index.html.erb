@@ -1,8 +1,31 @@
-<h1>CakeLog</h1>
+<h1 class="mt-4">CakeLog</h1>
 <% if user_signed_in? %>
 <%= "#{current_user.name}さんは、ログインしています。" %>
 <%= link_to "ログアウト", destroy_user_session_path, method: :delete%>
 <% else %>
 <%= link_to "新規登録", new_user_registration_path %>
 <%= link_to "ログイン", new_user_session_path %>
+<% end %>
+<div>
+  <%= link_to '投稿する', new_skill_path,method: :get  %>
+</div>
+
+<% @skills.each do |skill| %>
+<div class="skill">
+  <div class="skill-image">
+    <%= image_tag skill.image if skill.image.attached?%>
+  </div>
+  <div class="skill-name">
+    <%= skill.name %>
+  </div>
+  <div class="skill-category">
+    <%= skill.category.name %>
+  </div>
+  <div class="skill">
+    <%= skill.formulation_text %>
+  </div>
+  <div class="skill">
+    <%= skill.recipe_text %>
+  </div>
+</div>
 <% end %>
