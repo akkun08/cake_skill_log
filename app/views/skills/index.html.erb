@@ -1,6 +1,27 @@
 <%= render "shared/header" %>
 <div class="intro">
-  <%= image_tag("cake-intro2.jpg", class:"cake-intro") %>
+  <div class="intro1">
+    <h1>CakeLog</h1>
+    <p>一緒にお菓子作りを<br>
+      高めていきませんか?</p>
+    <%= link_to "新規登録", new_user_registration_path ,class: "sign-up3" %>
+  </div>
+  <div id="slide">
+    <ul>
+      <li><%= image_tag("cake-intro2.jpg", class:"cake-intro") %></li>
+      <li><%= image_tag("cake-intro12.jpg", class:"cake-intro") %></li>
+      <li><%= image_tag("cake-intro4.jpg", class:"cake-intro") %></li>
+      <li><%= image_tag("cake-intro9.jpg", class:"cake-intro") %></li>
+    </ul>
+  </div>
+  <div id="button">
+    <ul>
+      <li><a href="#" class="target">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+    </ul>
+  </div>
 </div>
 <div>
   <%= link_to '投稿する', new_skill_path,method: :get  %>
