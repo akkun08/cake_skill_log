@@ -1,13 +1,20 @@
+hr {
+  width: 60px;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
 .intro {
   height: 100vh;
   width: 100%;
   position: relative;
+  margin-top: 80px;
 }
 
 .intro1 {
   z-index: 3;
   position: absolute;
-  top: 5%;
+  top: 10%;
   right: 8%;
   letter-spacing: 1px;
   text-align: left;
@@ -26,7 +33,7 @@
 }
 
 .sign-up3 {
-  padding: 5px 10px;
+  padding: 5px 15px;
   margin: 10px 0;
   color: #333333;
   text-decoration: none;
@@ -34,10 +41,9 @@
   font-weight: 600;
   color: white;
   background-color: blueviolet;
-  border: 1px solid;
+  border: 1px solid blueviolet;
   border-radius: 20px;
   z-index: 5;
-  background-color: blueviolet;
 }
 
 #slide ul {
@@ -94,14 +100,78 @@
   background: #41afad;
 }
 
+.philosophy {
+  height: 65vh;
+  letter-spacing: 1px;
+}
+
+.philosophy h2 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.philosophy p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.philosophy-image {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.content {
+  margin-top: 90px;
+  margin-bottom: 150px;
+}
+
+.content-p {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.content2 h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.content h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.content p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.contents {
+  width: 100%;
+  border-radius: 50px;
+  height: 500px;
+  size: cover;
+  object-fit: cover;
+}
+
+.content1-1 {
+  padding-left: 50px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .cake-intro {
     height: 500px;
   }
+  .intro {
+    height: 70vh;
+  }
   .intro1 {
     position: absolute;
-    right: 2%;
-    top: 5%;
+    right: 4%;
+    top: 8%;
   }
   .intro1 h1 {
     font-size: 80px;
@@ -118,16 +188,42 @@
   #button {
     padding-top: 430px;
   }
+  .philosophy h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .philosophy p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .philosophy-image {
+    height: 380px;
+  }
+  .content2 h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .content h3 {
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .content p {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .intro {
+    height: 49vh;
+  }
   .cake-intro {
     height: 350px;
   }
   .intro1 {
     position: absolute;
     right: 2%;
-    top: 3%;
+    top: 15%;
   }
   .intro1 h1 {
     font-size: 50px;
@@ -140,5 +236,29 @@
   }
   #button {
     padding-top: 290px;
+  }
+  .philosophy {
+    height: 75vh;
+  }
+  .philosophy h2 {
+    font-size: 20px;
+  }
+  .philosophy p {
+    font-size: 15px;
+  }
+  .contents {
+    margin-bottom: 30px;
+  }
+  .content2 h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .content h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .content p {
+    font-size: 15px;
+    font-weight: 400;
   }
 }

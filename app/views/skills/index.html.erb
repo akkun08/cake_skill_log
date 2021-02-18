@@ -23,9 +23,55 @@
     </ul>
   </div>
 </div>
-<div>
-  <%= link_to '投稿する', new_skill_path,method: :get  %>
-</div>
+<section class="philosophy">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>好奇心を最大化させよう！</h2>
+        <p>
+          美味しいお菓子を作りたい。もっと新しい技術を学びたい。身につけた技術を定着させたい。そんなことを、あなたは考えていませんか？興味のあるお菓子作りの技術を閲覧や投稿することで、自分自身をもっと磨いていけると信じています。さあ，いっしょに関わる人を自分のケーキで幸せにしていきましょう。
+        </p>
+        <p class="mt-4">CakeLog　辻明弘</p>
+      </div>
+      <div class="col-md-6">
+        <%= image_tag("philosophy-image.jpg", class:"philosophy-image") %>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<section class="content">
+  <div class="container">
+    <p class="content-p">投稿例</p>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="content1">
+          <%= image_tag("contents.jpg", class: "contents") %>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="content1-1">
+          <div class="content2">
+            <h2>マフィン</h2>
+            <h3>材料</h3>
+            <p>・小麦粉___50g</p>
+            <p>・たまご___2個</p>
+            <p>・牛乳_____100g</p>
+          </div>
+          <div class="content3">
+            <h3>作り方</h3>
+            <p>1,小麦粉をふるう。<br>
+              2,卵を割ってボウルにいれる。<br>
+              3,牛乳を沸騰直前まで温める。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
 <% if user_signed_in? %>
 <% @skills.each do |skill| %>
 <div class="skill">
@@ -47,3 +93,5 @@
 </div>
 <% end %>
 <% end %>
+
+<%= render "shared/footer" %>

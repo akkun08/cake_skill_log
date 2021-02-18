@@ -8,11 +8,15 @@
       <span></span>
       <span></span>
     </div>
+    <div>
+    </div>
     <div class="sign-up">
       <% if user_signed_in? %>
       <%= "#{current_user.name}さんは、ログインしています。" %>
+      <%= link_to '投稿する', new_skill_path,method: :get, class:"new-skill"  %>
       <%= link_to "ログアウト", destroy_user_session_path ,method: :delete ,class: "sign-up2"%>
       <% else %>
+      <%= link_to '投稿する', new_skill_path,method: :get, class:"new-skill"  %>
       <%= link_to "ログイン", new_user_session_path ,class: "sign-up2" %>
       <%= link_to "新規登録", new_user_registration_path ,class: "sign-up2" %>
       <% end %>
