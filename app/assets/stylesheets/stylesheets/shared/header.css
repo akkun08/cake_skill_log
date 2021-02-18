@@ -30,3 +30,90 @@
   border: 1px solid #333333;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    color: #fff;
+    position: fixed;
+    z-index: 4;
+    right: 18px;
+    top: 28px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    z-index: 6;
+  }
+  .hamburger span {
+    display: block;
+    color: #fff;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 6px;
+    background: black;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  .hamburger.active span:nth-child(1) {
+    top: 16px;
+    left: 6px;
+    background: #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  .hamburger.active span:nth-child(2),
+  .hamburger.active span:nth-child(3) {
+    top: 16px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .sign-up {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 1s ease-out;
+    pointer-events: none;
+    opacity: 0;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+  }
+  .sign-up.active {
+    clip-path: circle(1400px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 90% -10%);
+    pointer-events: all;
+    opacity: 100;
+    z-index: 4;
+  }
+  .sign-up2 {
+    margin: 50% auto;
+    width: 50%;
+    z-index: 5;
+    display: block;
+    color: white;
+    border: 1px solid white;
+    transition: 0.4s all;
+  }
+}
