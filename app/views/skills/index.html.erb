@@ -1,4 +1,5 @@
 <%= render "shared/header" %>
+<% unless user_signed_in? %>
 <div class="intro">
   <div class="intro1">
     <h1>CakeLog</h1>
@@ -68,29 +69,30 @@
       </div>
     </div>
   </div>
-
-
 </section>
+<% end %>
 
-<% if user_signed_in? %>
-<% @skills.each do |skill| %>
-<div class="skill">
-  <div class="skill-image">
-    <%= image_tag skill.image if skill.image.attached?%>
-  </div>
-  <div class="skill-name">
-    <%= skill.name %>
-  </div>
-  <div class="skill-category">
-    <%= skill.category.name %>
-  </div>
+<section class="skills">
+  <% if user_signed_in? %>
+  <% @skills.each do |skill| %>
   <div class="skill">
-    <%= skill.formulation_text %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="skill-name">
+            <div>
+              <span class="contributor">投稿者</span><span class="contributor"><%= skill.user.name %></span>
+            </div>
+            <span class="skill-name1"><%= skill.name %></span>
+          </div>
+          <div class="skill-image">
+            <%= image_tag(skill.image,class: "skill-image") if skill.image.attached?%>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="skill">
-    <%= skill.recipe_text %>
-  </div>
-</div>
+</section>
 <% end %>
 <% end %>
 

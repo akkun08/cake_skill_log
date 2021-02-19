@@ -1,152 +1,152 @@
 header {
-  background: #ece9e6;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffffff, #ece9e6);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  position: fixed;
-  z-index: 6;
-  width: 100%;
-  margin-top: -85px;
+    background: #ece9e6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #ece9e6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    margin-top: -85px;
 }
 
 .top-page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
 }
 
 .top-page-logo {
-  padding: 20px;
+    padding: 20px;
 }
 
 .cakelog {
-  font-size: 36px;
-  font-weight: 600;
-  margin: 10px 20px;
-  color: #333333;
-  text-decoration: none;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 10px 20px;
+    color: #333333;
+    text-decoration: none;
 }
 
 .new-skill {
-  padding: 5px 10px;
-  margin: 10px 10px;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 24px;
-  color: #ffffff;
-  background-color: tomato;
-  border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: tomato;
+    border-radius: 20px;
 }
 
 .sign-up {
-  margin-top: 5px;
-  padding: 15px;
+    margin-top: 5px;
+    padding: 15px;
 }
 
 .sign-up2 {
-  padding: 5px 10px;
-  margin: 10px 10px;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 24px;
-  color: #ffffff;
-  background-color: blueviolet;
-  border-radius: 20px;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: blueviolet;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-    color: #fff;
-    position: fixed;
-    z-index: 4;
-    right: 18px;
-    top: 28px;
-    width: 42px;
-    height: 42px;
-    cursor: pointer;
-    z-index: 6;
-  }
-  .hamburger span {
-    display: block;
-    color: #fff;
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    left: 6px;
-    background: black;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-  }
-  .hamburger span:nth-child(1) {
-    top: 10px;
-  }
-  .hamburger span:nth-child(2) {
-    top: 20px;
-  }
-  .hamburger span:nth-child(3) {
-    top: 30px;
-  }
-  .hamburger.active span:nth-child(1) {
-    top: 16px;
-    left: 6px;
-    background: #fff;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  .hamburger.active span:nth-child(2),
-  .hamburger.active span:nth-child(3) {
-    top: 16px;
-    background: #fff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  .sign-up {
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.9);
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    justify-content: space-around;
-    flex-direction: column;
-    opacity: 0;
-    transition: all 1s ease-out;
-    pointer-events: none;
-    opacity: 0;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
-  }
-  .sign-up.active {
-    clip-path: circle(1400px at 90% -10%);
-    -webkit-clip-path: circle(1400px at 90% -10%);
-    pointer-events: all;
-    opacity: 100;
-    z-index: 4;
-  }
-  .sign-up2 {
-    margin: 50% auto;
-    width: 50%;
-    z-index: 5;
-    display: block;
-    color: white;
-    transition: 0.4s all;
-  }
-  .new-skill {
-    margin: 50% auto;
-    width: 50%;
-    z-index: 5;
-    display: block;
-    color: white;
-    transition: 0.4s all;
-  }
+    .hamburger {
+        display: block;
+        color: #fff;
+        position: fixed;
+        z-index: 4;
+        right: 18px;
+        top: 28px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        z-index: 6;
+    }
+    .hamburger span {
+        display: block;
+        color: #fff;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: 6px;
+        background: black;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+    }
+    .hamburger span:nth-child(1) {
+        top: 10px;
+    }
+    .hamburger span:nth-child(2) {
+        top: 20px;
+    }
+    .hamburger span:nth-child(3) {
+        top: 30px;
+    }
+    .hamburger.active span:nth-child(1) {
+        top: 16px;
+        left: 6px;
+        background: #fff;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .hamburger.active span:nth-child(2),
+    .hamburger.active span:nth-child(3) {
+        top: 16px;
+        background: #fff;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .sign-up {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-around;
+        flex-direction: column;
+        opacity: 0;
+        transition: all 1s ease-out;
+        pointer-events: none;
+        opacity: 0;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+    }
+    .sign-up.active {
+        clip-path: circle(1400px at 90% -10%);
+        -webkit-clip-path: circle(1400px at 90% -10%);
+        pointer-events: all;
+        opacity: 100;
+        z-index: 4;
+    }
+    .sign-up2 {
+        margin: 40% auto;
+        width: 50%;
+        z-index: 5;
+        display: block;
+        color: white;
+        transition: 0.4s all;
+    }
+    .new-skill {
+        margin: 40% auto;
+        width: 50%;
+        z-index: 5;
+        display: block;
+        color: white;
+        transition: 0.4s all;
+    }
 }
