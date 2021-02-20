@@ -1,4 +1,6 @@
 class SkillsController < ApplicationController
+  before_action :authenticate_user!, only: [:edit, :update, :destroy, :new, :create]
+
   def index
     @skills = Skill.order("created_at DESC")
   end

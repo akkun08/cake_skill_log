@@ -1,11 +1,35 @@
+<%= render "shared/header" %>
 <%= form_with model: @skill, url:skills_path, local: true do |f| %>
 <div class="skill-box">
-  <h2>スキルを投稿する</h2>
-  <%= f.file_field :image, id:"skill-image" %>
-  <%= f.collection_select(:category_id, Category.all,:id, :name,{},{class:"category-select"}) %>
-  <%= f.text_field :name, class:"skill-name",placeholder:"タイトル名" %>
-  <%= f.text_area :formulation_text, class:"skill-formulation", placeholder:"配合" %>
-  <%= f.text_area :recipe_text, class:"skill-recipe"  %>
-  <%= f.submit "投稿する", class:"btn" %>
+  <div class="skill-box2">
+    <div class="post">
+      <h2>お菓子作りを投稿する</h2>
+    </div>
+    <div class="skill-name2">
+      <p>お菓子名</p>
+      <%= f.text_field :name, class:"skill-name2",placeholder:"タイトル名" %>
+    </div>
+    <div class="skill-category">
+      <p>カテゴリを選択する</p>
+      <%= f.collection_select(:category_id, Category.all,:id, :name,{},{class:"category-select"}) %>
+    </div>
+    <div class="skill-image２">
+      <p>画像を選択する</p>
+      <%= f.file_field :image, id:"skill-image" %>
+    </div>
+    <div class="skill-formulation">
+      <p>材料</p>
+      <%= f.text_area :formulation_text, class:"skill-formulation", placeholder:"材料の分量" %>
+    </div>
+    <div class="skill-recipe">
+      <p>作り方</p>
+      <%= f.text_area :recipe_text, class:"skill-recipe", placeholder:"作り方"  %>
+    </div>
+    <div class="skill-btn">
+      <%= f.submit "投稿する", class:"btn2" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+  </div>
 </div>
 <% end %>
+<%= render "shared/footer" %>

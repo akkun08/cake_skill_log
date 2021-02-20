@@ -1,0 +1,66 @@
+.cakelog2 {
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin: 30px auto 10px;
+}
+
+.login {
+    text-align: center;
+    margin-top: 50px;
+    height: 77vh;
+}
+
+.login1 {
+    margin: 0 auto;
+    padding: 80px;
+    width: 60%;
+    background-color: #ffffff;
+    height: 70vh;
+}
+
+.login2 {
+    text-align: left;
+    margin: 20px 19% 40px;
+}
+
+.field input {
+    padding: 10px;
+    width: 60%;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.field p {
+    margin: 10px 20%;
+    font-size: 24px;
+    text-align: left;
+}
+
+.actions {
+    text-align: left;
+    margin: 0 19%;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 10px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #828df5;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .login1 {
+        width: 90%;
+    }
+    .field p {
+        font-size: 18px;
+    }
+}
