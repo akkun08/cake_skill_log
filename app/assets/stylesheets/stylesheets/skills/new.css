@@ -81,6 +81,7 @@ textarea {
     text-decoration: none;
     font-size: 24px;
     color: #ffffff;
-    background-color: blueviolet;
+    background-color: #828df5;
+    opacity: 0.8;
     border-radius: 20px;
 }
