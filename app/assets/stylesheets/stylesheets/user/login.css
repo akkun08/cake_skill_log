@@ -54,3 +54,12 @@
     background-color: blueviolet;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .login1 {
+        width: 90%;
+    }
+    .field p {
+        font-size: 18px;
+    }
+}
