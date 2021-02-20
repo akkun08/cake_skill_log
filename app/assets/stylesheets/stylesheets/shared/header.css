@@ -16,16 +16,18 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
+    position: relative;
 }
 
 .top-page-logo {
-    padding: 20px;
+    padding: 25px;
 }
 
 .cakelog {
+    position: absolute;
+    top: 31%;
     font-size: 36px;
     font-weight: 600;
-    margin: 10px 20px;
     color: #333333;
     text-decoration: none;
 }
