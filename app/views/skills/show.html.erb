@@ -2,15 +2,24 @@
 <section class="skill-show">
   <div class="skill-show-box">
     <div class="container">
+      <% if user_signed_in? %>
+      <% if current_user.id == @skill.user.id %>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-1">
           <div class="skill-edit">
             <%= link_to "編集",edit_skill_path(@skill.id),method: :get, class: "skill-edit" %>
           </div>
-          <div class="col-md-3">
+        </div>
+        <div class="col-md-1">
+          <div class="skill-delete">
+            <%= link_to "削除",skill_path(@skill.id),method: :delete, class: "skill-delete" %>
           </div>
         </div>
+        <div class="col-md-10">
+        </div>
       </div>
+      <% end %>
+      <% end %>
       <div class="row">
         <div class="col-md-12">
           <div class="skill-show-name">
@@ -31,7 +40,7 @@
         <div class="col-md-6">
           <div class="skill-show-formulation-text">
             <p>材料</p>
-            <%= @skill.formulation_text %>
+            <p><%= @skill.formulation_text %></p>
           </div>
         </div>
       </div>
@@ -39,7 +48,7 @@
         <div class="col-md-12">
           <div class="skill-show-recipe-text">
             <p>作り方</p>
-            <%= @skill.recipe_text %>
+            <p><%= @skill.recipe_text %></p>
           </div>
         </div>
       </div>

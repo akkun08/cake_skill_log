@@ -14,12 +14,26 @@
 }
 
 .skill-edit {
-    width: 85px;
-    padding: 3px 5px;
+    text-align: center;
+    width: 70px;
+    padding: 3px 2px;
     margin: 10px 10px;
     color: #ffffff;
     font-size: 20px;
     background-color: tomato;
+    opacity: 0.9;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.skill-delete {
+    text-align: center;
+    width: 70px;
+    padding: 3px 2px;
+    margin: 10px 10px;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: #828df5;
     opacity: 0.9;
     text-decoration: none;
     border-radius: 20px;
@@ -42,4 +56,14 @@
     object-fit: cover;
     position: center;
     border-radius: 20px;
+}
+
+.skill-show-formulation-text {
+    white-space: pre-wrap;
+    font-size: 18px;
+}
+
+.skill-show-recipe-text {
+    white-space: pre-wrap;
+    font-size: 18px;
 }
