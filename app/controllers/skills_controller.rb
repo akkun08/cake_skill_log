@@ -1,6 +1,7 @@
 class SkillsController < ApplicationController
   before_action :authenticate_user!, only: [:edit, :update, :destroy, :new, :create]
-  before_action :find_params, only: [:show, :edit, :update]
+  before_action :find_params, only: [:show, :edit, :update, :destroy]
+  before_action :cannot_transition, only: [:edit, :update, :destroy]
 
   def index
     @skills = Skill.order("created_at DESC")
@@ -33,10 +34,24 @@ class SkillsController < ApplicationController
     end
   end
 
+  def destroy
+    if @skill.destroy
+      redirect_to root_path
+    else
+      redirect_to root_path
+    end
+  end
+
   private
 
   def find_params
     @skill = Skill.find(params[:id])
+  end
+
+  def cannot_transition
+    unless @skill.user.id == current_user.id
+      redirect_to action: :index
+    end
   end
 
   def skill_params
