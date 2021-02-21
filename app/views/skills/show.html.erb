@@ -1,0 +1,40 @@
+<%= render "shared/header" %>
+<section class="skill-show">
+  <div class="skill-show-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="skill-show-name">
+            <%= @skill.name %>
+            <span id="skill-show-user"><%= @skill.user.name %></span>
+          </div>
+          <div class="skill-show-category">
+            <%= @skill.category.name %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="skill-show-image">
+            <%= image_tag @skill.image ,class: "skill-show-image"%>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-show-formulation-text">
+            <p>材料</p>
+            <%= @skill.formulation_text %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="skill-show-recipe-text">
+            <p>作り方</p>
+            <%= @skill.recipe_text %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%= render 'shared/footer' %>

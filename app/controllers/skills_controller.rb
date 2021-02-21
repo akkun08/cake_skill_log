@@ -18,6 +18,10 @@ class SkillsController < ApplicationController
     end
   end
 
+  def show
+    @skill = Skill.find(params[:id])
+  end
+
   private
 
   def skill_params
