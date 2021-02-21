@@ -3,6 +3,15 @@
   <div class="skill-show-box">
     <div class="container">
       <div class="row">
+        <div class="col-md-3">
+          <div class="skill-edit">
+            <%= link_to "編集",edit_skill_path(@skill.id),method: :get, class: "skill-edit" %>
+          </div>
+          <div class="col-md-3">
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-12">
           <div class="skill-show-name">
             <%= @skill.name %>
@@ -36,5 +45,7 @@
       </div>
     </div>
   </div>
+</section>
+<section class="customize">
 </section>
 <%= render 'shared/footer' %>

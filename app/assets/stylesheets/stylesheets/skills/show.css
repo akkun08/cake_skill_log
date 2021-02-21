@@ -13,6 +13,18 @@
     border-radius: 20px;
 }
 
+.skill-edit {
+    width: 85px;
+    padding: 3px 5px;
+    margin: 10px 10px;
+    color: #ffffff;
+    font-size: 20px;
+    background-color: tomato;
+    opacity: 0.9;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
 .skill-show-name {
     font-size: 30px;
     font-weight: 600;

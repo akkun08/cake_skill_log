@@ -61,6 +61,7 @@ textarea {
 }
 
 .skill-btn {
+    width: 100%;
     text-align: left;
     margin: 20px 20%;
 }
@@ -69,9 +70,7 @@ textarea {
     padding: 5px 10px;
     margin: 10px 10px;
     color: #ffffff;
-    text-decoration: none;
     font-size: 24px;
-    color: #ffffff;
     background-color: tomato;
     border-radius: 20px;
 }
@@ -82,7 +81,6 @@ textarea {
     color: #ffffff;
     text-decoration: none;
     font-size: 24px;
-    color: #ffffff;
     background-color: #828df5;
     opacity: 0.8;
     border-radius: 20px;
@@ -90,3 +88,9 @@ textarea {
 
 
 /* 投稿入力画面 */
+
+@media screen and (max-width: 768px) {
+    .skill-box2 {
+        width: 80%;
+    }
+}
