@@ -2,7 +2,7 @@ ja:
   activerecord:
     attributes:
       user:
-        name: ネーム
-      # tweet:
-      #   text: テキスト
-      #   image: 画像
+        name: 名前
+        # tweet:
+        text: テキスト
+        image: 画像

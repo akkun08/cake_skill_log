@@ -31,8 +31,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row" id="skill-show-row">
+        <div class="col-md-6 h-75">
           <div class="skill-show-image">
             <%= image_tag @skill.image ,class: "skill-show-image"%>
           </div>
@@ -55,6 +55,44 @@
     </div>
   </div>
 </section>
-<section class="customize">
+<section class="comment">
+  <div class="comment-box">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <p>コメント一覧</p>
+          <div class="comment-out">
+            <% @comments.each do |comment| %>
+            <div class="comment-name">
+              <%= comment.user.name %>
+              <%= link_to "削除",skill_comment_path(comment.skill.id,comment.id),method: :delete, class: "comment-delete" %>
+            </div>
+            <p>
+              <%= comment.text %>
+            </p>
+            <% end %>
+          </div>
+
+          <div class="comment-in">
+            <%= form_with(model: [@skill, @comment], local: true) do |form| %>
+            <%= form.text_area :text, placeholder: "コメントする" ,rows: "2"%>
+            <div>
+              <%= form.submit "コメントする" %>
+            </div>
+            <% end %>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="comment-image-box">
+            <%= image_tag("comment.jpg", class:"comment-image")  %>
+            <p>
+              良かったところを
+              コメントしてみよう!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <%= render 'shared/footer' %>

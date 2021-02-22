@@ -21,6 +21,8 @@ class SkillsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @skill.comments.includes(:user)
   end
 
   def edit
