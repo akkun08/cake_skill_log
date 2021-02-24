@@ -82,7 +82,8 @@
         <div class="col-md-12">
           <div class="skill-name">
             <div>
-              <span class="contributor">投稿者</span><span class="contributor"><%= skill.user.name %></span>
+              <span class="contributor">投稿者</span>
+              <%= link_to "#{skill.user.name}",user_path(skill.user.id),method: :get,class:"user-page" %>
             </div>
             <span class="skill-name1"><%= skill.name %></span>
           </div>
