@@ -1,0 +1,29 @@
+<%= render "shared/header" %>
+<section class="user-show">
+  <div class="user-show1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="user-show2">
+            <div class="user-show3">
+
+              <p><%= @user.name %>さんの投稿一覧</p>
+            </div>
+            <div class="user-contents">
+              <% @skills.each do |skill|  %>
+              <div class="user-show4">
+                <span class="user-show-name1"><%= skill.name %></span>
+              </div>
+              <%= link_to skill_path(skill.id), method: :get do %>
+              <div class="user-show-image">
+                <%= image_tag(skill.image,class: "user-image") if skill.image.attached?%>
+              </div>
+              <% end %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
