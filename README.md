@@ -4,7 +4,7 @@
 
 ## CakeLog
 
-![demo](https://gyazo.com/77bf4119042daf4dc33831b3c9f93686)
+![demo](https://gyazo.com/77bf4119042daf4dc33831b3c9f93686/raw)
 
 # 概要
 
@@ -17,7 +17,7 @@
 
 <br>
 
-![demo](https://cake-skill-log.herokuapp.com/)
+https://cake-skill-log.herokuapp.com/
 
 ログイン情報(テスト用)
 
@@ -48,27 +48,27 @@
 
 - ランディングページ
 
-![demo](https://gyazo.com/3352d2bfd85208dd82db7f7a0ac80a31)
+![demo](https://gyazo.com/3352d2bfd85208dd82db7f7a0ac80a31/raw)
 
 - ログイン、ログアウト機能(gem devise)
 
-![demo](https://gyazo.com/bee1391e672c6eec1559cd04679f15e3)
+![demo](https://gyazo.com/bee1391e672c6eec1559cd04679f15e3/raw)
 
 - ケーキレシピを投稿
 
-![demo](https://gyazo.com/ea8774c7731f6453395c323e7673e0b7)
+![demo](https://gyazo.com/ea8774c7731f6453395c323e7673e0b7/raw)
 
 - ケーキレシピを編集機能
 
-![demo](https://gyazo.com/4f9b6bee728559540815d0049552bc99)
+![demo](https://gyazo.com/4f9b6bee728559540815d0049552bc99/raw)
 
 - ケーキレシピを削除機能
 
-![demo](https://gyazo.com/185bdf11a5b416bfd89879eeac6a131c)
+![demo](https://gyazo.com/185bdf11a5b416bfd89879eeac6a131c/raw)
 
 - 投稿詳細画面でコメント機能
 
-![demo](https://gyazo.com/0e90fa68ff8b4ac07c8fd652c80005e7)
+![demo](https://gyazo.com/0e90fa68ff8b4ac07c8fd652c80005e7/raw)
 
 # 使用技術
 
