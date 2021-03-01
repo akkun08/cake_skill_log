@@ -48,7 +48,7 @@ https://cake-skill-log.herokuapp.com/
 
 - ランディングページ
 
-![demo](https://gyazo.com/f450b1136423e5fbeaeddd60914a50db/raw)
+![demo](https://gyazo.com/67507fd3be2e7f997c243ec201b20887/raw)
 
 - ログイン、ログアウト機能(gem devise)
 
