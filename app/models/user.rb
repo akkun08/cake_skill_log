@@ -10,6 +10,6 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   has_many :skills
-  has_many :comments
+  has_many :comments, dependent: :destroy
   has_one :purchase
 end
