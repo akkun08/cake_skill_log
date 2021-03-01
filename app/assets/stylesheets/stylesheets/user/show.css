@@ -32,7 +32,7 @@
 .user-image {
     width: 100%;
     max-width: 660px;
-    height: 400px;
+    height: 550px;
     object-fit: cover;
     border-radius: 50px;
     margin: 30px auto 200px;
@@ -53,7 +53,7 @@
     }
     .user-image {
         width: 85%;
-        height: 400px;
+        height: 500px;
     }
 }
 

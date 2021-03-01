@@ -218,8 +218,9 @@ hr {
     text-align: center;
     width: 100%;
     max-width: 660px;
-    height: 400px;
+    height: 550px;
     object-fit: cover;
+    size: cover;
     margin: 0 auto;
     border-radius: 50px;
 }
@@ -291,7 +292,7 @@ hr {
         font-size: 15px;
     }
     .skill-image {
-        height: 400px;
+        height: 500px;
         width: 90%;
     }
 }

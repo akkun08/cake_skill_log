@@ -96,6 +96,7 @@
 #comment-index {
     font-size: 32px;
     font-weight: 700;
+    margin-bottom: 50px;
 }
 
 .comment-delete {
@@ -171,6 +172,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    #comment-index {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
     .comment-image-box {
         display: none;
     }
