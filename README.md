@@ -4,7 +4,7 @@
 
 ## CakeLog
 
-https://gyazo.com/77bf4119042daf4dc33831b3c9f93686
+![demo](https://gyazo.com/77bf4119042daf4dc33831b3c9f93686)
 
 # 概要
 
@@ -17,7 +17,7 @@ https://gyazo.com/77bf4119042daf4dc33831b3c9f93686
 
 <br>
 
-https://cake-skill-log.herokuapp.com/
+![demo](https://cake-skill-log.herokuapp.com/)
 
 ログイン情報(テスト用)
 
@@ -48,27 +48,27 @@ https://cake-skill-log.herokuapp.com/
 
 - ランディングページ
 
-https://gyazo.com/3352d2bfd85208dd82db7f7a0ac80a31
+![demo](https://gyazo.com/3352d2bfd85208dd82db7f7a0ac80a31)
 
 - ログイン、ログアウト機能(gem devise)
 
-https://gyazo.com/bee1391e672c6eec1559cd04679f15e3
+![demo](https://gyazo.com/bee1391e672c6eec1559cd04679f15e3)
 
 - ケーキレシピを投稿
 
-https://gyazo.com/ea8774c7731f6453395c323e7673e0b7
+![demo](https://gyazo.com/ea8774c7731f6453395c323e7673e0b7)
 
 - ケーキレシピを編集機能
 
-https://gyazo.com/4f9b6bee728559540815d0049552bc99
+![demo](https://gyazo.com/4f9b6bee728559540815d0049552bc99)
 
 - ケーキレシピを削除機能
 
-https://gyazo.com/185bdf11a5b416bfd89879eeac6a131c
+![demo](https://gyazo.com/185bdf11a5b416bfd89879eeac6a131c)
 
 - 投稿詳細画面でコメント機能
 
-https://gyazo.com/0e90fa68ff8b4ac07c8fd652c80005e7
+![demo](https://gyazo.com/0e90fa68ff8b4ac07c8fd652c80005e7)
 
 # 使用技術
 
@@ -85,40 +85,31 @@ https://gyazo.com/0e90fa68ff8b4ac07c8fd652c80005e7
 
 ## バックエンド
 
----
-
 - Ruby2.6.5
 - Ruby on Rails 6.0.3/4
 
 ## データベース
 
----
-
 - MySQL2
 
 ## テスト
-
----
 
 - RSpec
 - FactoryBot
 
 ## 本番環境
 
----
-
 - AWS(S3)
 - heroku
 
 ## ソース管理
 
----
-
 - GitHub,GitHubDesktop
 
 # 実装予定の機能
 
-<b s>
+<br>
+
 - ユーザー同士のメッセージ機能
 - ロゴ作成
 - Font Awesome でアイコン導入
