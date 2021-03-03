@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_21_130025) do
+ActiveRecord::Schema.define(version: 2021_03_03_064706) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -43,6 +43,23 @@ ActiveRecord::Schema.define(version: 2021_02_21_130025) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
+  create_table "message_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "message_id"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["message_id"], name: "index_message_users_on_message_id"
+    t.index ["user_id"], name: "index_message_users_on_user_id"
+  end
+
+  create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "text", null: false
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_messages_on_user_id"
+  end
+
   create_table "skills", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.integer "category_id", null: false
@@ -70,5 +87,8 @@ ActiveRecord::Schema.define(version: 2021_02_21_130025) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "comments", "skills"
   add_foreign_key "comments", "users"
+  add_foreign_key "message_users", "messages"
+  add_foreign_key "message_users", "users"
+  add_foreign_key "messages", "users"
   add_foreign_key "skills", "users"
 end
