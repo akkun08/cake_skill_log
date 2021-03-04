@@ -13,6 +13,7 @@
     <div class="sign-up">
       <% if user_signed_in? %>
       <%= link_to "#{current_user.name}",user_path(current_user.id),method: :get,class:"user-page" %>
+      <%= link_to "メッセージ", rooms_path, method: :get, class:"rooms_index" %>
       <%= link_to '投稿する', new_skill_path,method: :get, class:"new-skill"  %>
       <%= link_to "ログアウト", destroy_user_session_path ,method: :delete ,class: "sign-up2"%>
       <% else %>
