@@ -43,7 +43,7 @@
 - belongs_to user
 - belongs_to skill
 
-<!-- ## rooms テーブル
+## rooms テーブル
 
 | Column | Type   | Options    |
 | ------ | ------ | ---------- |
@@ -53,11 +53,11 @@
 
 - has_many :room_users
 - has_many :users, through: room_users
-- has_many :messages -->
+- has_many :messages
 
-## message_users
+## room_users
 
-message_users テーブル
+users テーブル
 
 | Column  | Type      | Options           |
 | ------- | --------- | ----------------- |
@@ -71,10 +71,11 @@ message_users テーブル
 
 ## messages テーブル
 
-| Column | Type      | Options           |
-| ------ | --------- | ----------------- |
-| text   | text      | null:false        |
-| user   | reference | foreign_key: true |
+| Column       | Type      | Options           |
+| ------------ | --------- | ----------------- |
+| text         | text      | null:false        |
+| user_id      | reference | foreign_key: true |
+| room_user_id | reference | foreign_key: true |
 
 ### Association
 
