@@ -1,6 +1,0 @@
-<h1>ルームだよ</h1>
-<% @users.each do |user| %>
-<div class="chat-user">
-  <%= link_to "#{user.name}", user_messages_path(user.id), method: :get, class:"message-user" %>
-</div>
-<% end %>

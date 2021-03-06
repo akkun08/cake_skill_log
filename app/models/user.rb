@@ -11,7 +11,5 @@ class User < ApplicationRecord
 
   has_many :skills
   has_many :comments
-  has_many :messages, through: :message_users, dependent: :destroy
-  has_many :message_users
   has_one :purchase
 end

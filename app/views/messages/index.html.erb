@@ -1,6 +1,0 @@
-<h1>ここでメッセージします。</h1>
-
-<%= form_with mode: @message, url:user_messages_path,method: :post, class: "message-form",local: true do |f| %>
-<%= f.text_field :text, class: "message-form1", placeholder: "type a message" %>
-<%= f.submit "送信",class: "message-submit" %>
-<% end %>
