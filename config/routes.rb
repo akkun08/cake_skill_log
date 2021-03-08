@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   resources :skills do
     resources :comments, only: [:create, :destroy]
   end
-  resources :users, only: :show
+  resources :users, only: [:show, :index]
+  resources :rooms, only: [:create, :show]
+  resources :messages, only: [:create]
 end

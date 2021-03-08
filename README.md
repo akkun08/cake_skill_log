@@ -166,29 +166,39 @@ https://cake-skill-log.herokuapp.com/
 - belongs_to user
 - belongs_to skill
 
-## user_messages テーブル
+## rooms テーブル
+
+| Column | Type | Options |
+| ------ | ---- | ------- |
+
+- has_many users, through: room_users
+- has_many room_users
+- has_many messages
+
+## rooms_users テーブル
 
 | Column | Type      | Options           |
 | ------ | --------- | ----------------- |
 | user   | reference | foreign_key: true |
-| item   | reference | foreign_key: true |
+| room   | reference | foreign_key: true |
 
 ### Association
 
 - belongs_to user
-- belongs_to message
+- belongs_to room
 
 ## messages テーブル
 
-| Column          | Type      | Options           |
-| --------------- | --------- | ----------------- |
-| text            | text      | null:false        |
-| user_id         | reference | foreign_key: true |
-| user_message_id | reference | foreign_key: true |
+| Column | Type      | Options           |
+| ------ | --------- | ----------------- |
+| text   | text      | null:false        |
+| user   | reference | foreign_key: true |
+| room   | reference | foreign_key: true |
 
 ### Association
 
-- has_many user_messages
+- belongs_to :room
+- belongs_to :user
 
 ## purchases テーブル
 
