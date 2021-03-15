@@ -9,6 +9,9 @@
 
               <p><%= @user.name %>さんの投稿一覧</p>
             </div>
+            <% if current_user != @user %>
+            <%= link_to 'chatを始める', message_path(@user.id)%>
+            <% end %>
             <div class="user-contents">
               <% @skills.each do |skill|  %>
               <div class="user-show4">

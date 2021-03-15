@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   resources :skills do
     resources :comments, only: [:create, :destroy]
   end
-  resources :users, only: [:show, :index]
-  resources :rooms, only: [:create, :show]
-  resources :messages, only: [:create]
+  resources :users, only: [:show]
+  resources :rooms, only: [:index]
+  get "message/:id" => "messages#show", as: "message"
+  resources :messages, only: [:show, :create]
 end
