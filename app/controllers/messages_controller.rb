@@ -21,7 +21,7 @@ class MessagesController < ApplicationController
     if @message.save
       redirect_to request.referrer
     else
-      render :show
+      redirect_to request.referrer
     end
   end
 
