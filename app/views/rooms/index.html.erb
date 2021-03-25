@@ -1,11 +1,16 @@
 <%= render "shared/header" %>
-<h1>ユーザー一覧</h1>
-
-<% @users.each do |user| %>
-<div>
-  <% if current_user != user %>
-  <%=link_to "#{user.name}",message_path(user.id), method: :get, class:"chat-user" %>
-  <% end %>
-</div>
-<% end %>
+<section class="room">
+  <div class="room-box">
+    <h1>ユーザー一覧だよ</h1>
+    <div class="room-box1">
+      <% @users.each do |user| %>
+      <div class="chat-name">
+        <% if current_user != user %>
+        <%=link_to "#{user.name}",message_path(user.id), method: :get, class:"chat-user" %>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</section>
 <%= render "shared/footer" %>
