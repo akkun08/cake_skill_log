@@ -1,4 +1,6 @@
 class MessagesController < ApplicationController
+  before_action :cannot_transition, only: [:show, :create]
+
   def show
     @user = User.find(params[:id])
     rooms = current_user.room_users.pluck(:room_id)
@@ -29,5 +31,12 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:content, :room_id)
+  end
+
+  def cannot_transition
+    @message = Skill.find(params[:id])
+    if @message.user.id == current_user.id
+      redirect_to root_path
+    end
   end
 end
