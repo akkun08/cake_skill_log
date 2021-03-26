@@ -34,7 +34,7 @@ class MessagesController < ApplicationController
   end
 
   def cannot_transition
-    @message = Skill.find(params[:id])
+    @message = Message.find_by(params[:id])
     if @message.user.id == current_user.id
       redirect_to root_path
     end
