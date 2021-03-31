@@ -98,6 +98,7 @@ textarea {
 
 @media screen and (max-width: 768px) {
     .skill-box {
+<<<<<<< Updated upstream
         width: 100%;
     }
     .skill-box2 {
@@ -105,7 +106,15 @@ textarea {
         height: 90%;
     }
     #skill-image {
+=======
+        width: 90%;
+        margin: 80px auto;
+    }
+    .skill-box2 {
+        margin-top: 20px;
+>>>>>>> Stashed changes
         width: 80%;
+        height: 90%;
     }
     .btn2 {
         margin-left: 0;
