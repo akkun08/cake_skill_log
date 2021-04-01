@@ -1,0 +1,36 @@
+    <%= render "shared/header" %>
+  <section class="message">
+    <h1><%= @user.name%>さんとのチャットルームだよ</h1>
+    <div class="message1">
+      <ul class="message2">
+        <% @messages.each do |message| %>
+        <% if message.user == current_user %>
+        <li class="message-r">
+          <div class="message-r1">
+            <p><%= message.content %></p>
+          </div>
+        </li>
+        <% else %>
+        <li class="message-l">
+          <div class="user-name">
+            <%= message.user.name %>
+          </div>
+          <div class="message-l1">
+            <p><%= message.content %></p>
+          </div>
+        </li>
+        <% end %>
+        <% end %>
+      </ul>
+    </div>
+
+    </div>
+    <div class="message-form">
+      <%= form_with model: @message, local: true do |f| %>
+      <%= f.text_field :content,class:'message-field' %>
+      <%= f.hidden_field :room_id %>
+      <%= f.submit '送信',class:'message-submit' %>
+      <% end %>
+    </div>
+  </section>
+  <%= render "shared/footer" %>

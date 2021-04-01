@@ -12,4 +12,7 @@ class User < ApplicationRecord
   has_many :skills
   has_many :comments, dependent: :destroy
   has_one :purchase
+  has_many :room_users
+  has_many :messages
+  has_many :rooms, through: :room_users
 end

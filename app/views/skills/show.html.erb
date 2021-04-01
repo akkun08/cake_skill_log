@@ -98,5 +98,10 @@
       </div>
     </div>
   </div>
+  <% unless current_user.id == @skill.user.id%>
+  <div class="chat-btn">
+    <%= link_to 'メッセージを送る', message_path(@skill.id),class:"chat-room"%>
+  </div>
+  <% end %>
 </section>
 <%= render 'shared/footer' %>
