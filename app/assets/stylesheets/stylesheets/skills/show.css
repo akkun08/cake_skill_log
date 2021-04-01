@@ -177,25 +177,22 @@
     margin-bottom: 50px;
 }
 
-
-}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .comment-image {
         height: 25vw;
     }
-    
     .comment-image-box p {
         font-size: 2.3vw;
         position: absolute;
         left: -6%;
     }
 }
+
 @media screen and (max-width: 768px) {
     #comment-index {
         margin-bottom: 30px;
         font-size: 20px;
     }
-    
     .comment-image-box {
         display: none;
     }
