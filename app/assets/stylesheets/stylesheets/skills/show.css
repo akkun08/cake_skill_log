@@ -120,8 +120,8 @@
 }
 
 .comment-textarea {
-    height: 80%;
-    width: 50%;
+    height: 100%;
+    width: 80%;
 }
 
 .comment-btn {
@@ -195,5 +195,8 @@
     }
     .comment-image-box {
         display: none;
+    }
+    .chat-room {
+        font-size: 18px;
     }
 }
