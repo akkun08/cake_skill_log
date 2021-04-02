@@ -1,6 +1,4 @@
 class MessagesController < ApplicationController
-  before_action :cannot_transition, only: [:show, :create]
-
   def show
     @user = User.find(params[:id])
     rooms = current_user.room_users.pluck(:room_id)
@@ -15,10 +13,13 @@ class MessagesController < ApplicationController
     end
     @messages = @room.messages
     @message = Message.new(room_id: @room.id)
+
+    if @user.id == current_user.id
+      redirect_to root_path
+    end
   end
 
   def create
-    # binding.pry
     @message = current_user.messages.new(message_params)
     if @message.save
       redirect_to request.referrer
@@ -31,12 +32,5 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:content, :room_id)
-  end
-
-  def cannot_transition
-    @message = Message.find_by(params[:id])
-    if @message.user.id == current_user.id
-      redirect_to root_path
-    end
   end
 end
