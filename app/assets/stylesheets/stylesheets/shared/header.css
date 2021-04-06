@@ -41,10 +41,11 @@ header {
     color: #ffffff;
     background-color: tomato;
     border-radius: 20px;
+    transition: all 0.3s;
 }
 
 .new-skill:hover {
-    transform: translateX(-2.5px, -2.5px);
+    transform: translate(-2.5px, -2.5px);
     color: white;
     box-shadow: 5px 5px 0 0 #000;
 }
