@@ -25,7 +25,7 @@ header {
 
 .cakelog {
     position: absolute;
-    top: 31%;
+    top: 8%;
     font-size: 36px;
     font-weight: 600;
     color: #333333;
@@ -41,6 +41,13 @@ header {
     color: #ffffff;
     background-color: tomato;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.new-skill:hover {
+    transform: translate(-2.5px, -2.5px);
+    color: white;
+    box-shadow: 5px 5px 0 0 #000;
 }
 
 .sign-up {
