@@ -6,12 +6,12 @@
       <% if current_user.id == @skill.user.id %>
       <div class="row">
         <div class="col-md-1">
-          <div class="skill-edit">
+          <div class="skill-edit0">
             <%= link_to "編集",edit_skill_path(@skill.id),method: :get, class: "skill-edit" %>
           </div>
         </div>
         <div class="col-md-1">
-          <div class="skill-delete">
+          <div class="skill-delete0">
             <%= link_to "削除",skill_path(@skill.id),method: :delete, class: "skill-delete" %>
           </div>
         </div>

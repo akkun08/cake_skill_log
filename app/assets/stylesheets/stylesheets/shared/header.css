@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 11vh;
+    height: 13.5vh;
     position: relative;
 }
 
@@ -25,7 +25,7 @@ header {
 
 .cakelog {
     position: absolute;
-    top: 8%;
+    top: 9%;
     font-size: 36px;
     font-weight: 600;
     color: #333333;
@@ -33,6 +33,7 @@ header {
 }
 
 .new-skill {
+    display: inline-block;
     padding: 5px 10px;
     margin: 10px 10px;
     color: #ffffff;
@@ -56,6 +57,7 @@ header {
 }
 
 .sign-up2 {
+    display: inline-block;
     padding: 5px 10px;
     margin: 10px 10px;
     color: #ffffff;
@@ -65,9 +67,17 @@ header {
     background-color: #828df5;
     opacity: 0.8;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.sign-up2:hover {
+    transform: translate(-2.5px, -2.5px);
+    color: white;
+    box-shadow: 5px 5px 0 0 #000;
 }
 
 .user-index {
+    display: inline-block;
     padding: 5px 10px;
     margin: 10px 10px;
     color: #ffffff;
@@ -77,6 +87,13 @@ header {
     background-color: #828df5;
     opacity: 0.8;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.user-index:hover {
+    transform: translate(-2.5px, -2.5px);
+    color: white;
+    box-shadow: 5px 5px 0 0 #000;
 }
 
 .user-page {

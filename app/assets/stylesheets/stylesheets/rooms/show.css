@@ -13,6 +13,10 @@
     height: 100%;
 }
 
+.room-box h1 {
+    padding-top: 50px;
+}
+
 .chat-name {
     margin: 15px;
 }

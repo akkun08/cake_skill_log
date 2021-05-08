@@ -5,6 +5,10 @@
     margin-top: 80px;
 }
 
+.message h1 {
+    padding-top: 50px;
+}
+
 .message1 {
     /* height: 100%; */
     width: calc(100% - 60%);
@@ -87,16 +91,25 @@
 }
 
 #message_content {
-    width: 45%;
+    width: 40%;
     margin-left: 50px;
     padding: 10px;
 }
 
 .message-submit {
+    display: inline-block;
+    color: white;
     background-color: rgb(183, 207, 248);
-    color: #000;
     padding: 10px;
     border-radius: 50px;
+    border: solid 1px rgb(183, 207, 248);
+    transition: all 0.3s;
+}
+
+.message-submit:hover {
+    transform: translate(-2.5px, -2.5px);
+    color: white;
+    box-shadow: 5px 5px 0 0 #000;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -113,6 +126,7 @@
         width: calc(100% - 40%);
     }
     #message_content {
+        margin-left: 0;
         width: 65%;
     }
 }

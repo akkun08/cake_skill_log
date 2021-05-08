@@ -14,29 +14,45 @@
 }
 
 .skill-edit {
+    display: inline-block;
     text-align: center;
     width: 70px;
     padding: 3px 2px;
-    margin: 10px 10px;
+    margin: 10px 10px 0 0;
     color: #ffffff;
     font-size: 20px;
     background-color: tomato;
     opacity: 0.9;
     text-decoration: none;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.skill-edit:hover {
+    transform: translate(-2.5px, -2.5px);
+    color: white;
+    box-shadow: 5px 5px 0 0 #000;
 }
 
 .skill-delete {
+    display: inline-block;
     text-align: center;
     width: 70px;
     padding: 3px 2px;
-    margin: 10px 10px;
+    margin: 10px 0 0 30px;
     color: #ffffff;
     font-size: 20px;
     background-color: #828df5;
     opacity: 0.9;
     text-decoration: none;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.skill-delete:hover {
+    transform: translate(-2.5px, -2.5px);
+    color: white;
+    box-shadow: 5px 5px 0 0 #000;
 }
 
 .skill-show-name {
@@ -100,15 +116,22 @@
 }
 
 .comment-delete {
+    display: inline-block;
     padding: 2px 5px;
     margin: 10px 10px;
-    color: #ffffff;
     text-decoration: none;
     font-size: 12px;
     color: #ffffff;
     background-color: #828df5;
     opacity: 0.8;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.comment-delete:hover {
+    transform: translate(-2px, -2px);
+    color: white;
+    box-shadow: 2px 2px 0 0 #000;
 }
 
 .comment-name {
@@ -125,6 +148,7 @@
 }
 
 .comment-btn {
+    display: inline-block;
     padding: 3px 8px;
     margin: 10px 10px;
     color: #ffffff;
@@ -133,7 +157,15 @@
     color: #ffffff;
     background-color: #828df5;
     opacity: 0.8;
+    border: solid 1px #828df5;
     border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.comment-btn:hover {
+    transform: translate(-2.5px, -2.5px);
+    color: white;
+    box-shadow: 5px 5px 0 0 #000;
 }
 
 .comment-image {
@@ -198,5 +230,8 @@
     }
     .chat-room {
         font-size: 18px;
+    }
+    .skill-delete {
+        margin-left: 0;
     }
 }
