@@ -64,7 +64,7 @@ textarea {
 }
 
 .skill-btn {
-    width: 100%;
+    width: 88%;
     text-align: left;
     margin: 20px 20%;
 }
@@ -91,6 +91,7 @@ textarea {
     display: inline-block;
     padding: 5px 10px;
     margin: 10px 10px;
+    text-align: center;
     color: #ffffff;
     text-decoration: none;
     font-size: 24px;
@@ -114,11 +115,15 @@ textarea {
         width: 100%;
     }
     .skill-box2 {
-        width: 70%;
+        width: 85%;
         height: 90%;
+        margin: 0 auto;
+    }
+    .skill-box2 h2 {
+        font-size: 20px;
     }
     #skill-image {
-        width: 80%;
+        width: 90%;
         height: 90%;
     }
     .btn2 {

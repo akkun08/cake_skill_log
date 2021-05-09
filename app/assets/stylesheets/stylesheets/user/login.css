@@ -70,7 +70,22 @@
         width: 90%;
         height: 100%;
     }
+    .login2 {
+        margin-left: 0;
+    }
+    .field {
+        position: relative;
+    }
     .field p {
         font-size: 18px;
+        margin-left: 0;
+    }
+    .field input {
+        width: 100%;
+    }
+    .btn {
+        position: absolute;
+        left: 25%;
+        margin-left: 0;
     }
 }
