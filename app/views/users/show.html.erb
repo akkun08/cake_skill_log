@@ -8,7 +8,7 @@
             <div class="user-show3">
 
               <p><span><%= @user.name %>さんの投稿一覧</span>
-              </p>
+                      </p>
               <% if current_user != @user %>
               <div>
                 <span class="user-chat-room"><%= link_to 'メッセージを送る', message_path(@user.id),class:"chat-room2"%></span>

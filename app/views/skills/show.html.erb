@@ -33,7 +33,7 @@
       </div>
       <div class="row" id="skill-show-row">
         <div class="col-md-6 h-75">
-          <div class="skill-show-image">
+          <div>
             <%= image_tag @skill.image ,class: "skill-show-image"%>
           </div>
         </div>
@@ -89,18 +89,20 @@
         <div class="col-md-6 col-sm-12">
           <div class="comment-image-box">
             <%= image_tag("comment-image1.jpg", class:"comment-image")  %>
-            <p>
+                  <p>
               良かったところを
               コメントしてみよう!
             </p>
           </div>
         </div>
-      </div>
+                                    </div>
     </div>
   </div>
   <% unless current_user.id == @skill.user.id%>
-  <div class="chat-btn">
-    <%= link_to 'メッセージを送る', message_path(@skill.id),class:"chat-room"%>
+  <div class="chat-box">
+    <div class="chat-btn">
+      <%= link_to 'メッセージを送る', message_path(@skill.id),class:"chat-room"%>
+    </div>
   </div>
   <% end %>
 </section>
