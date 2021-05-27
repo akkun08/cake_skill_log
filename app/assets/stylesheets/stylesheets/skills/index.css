@@ -1,375 +1,362 @@
 hr {
-    width: 60px;
-    border: 1px solid #000;
-    margin: 0 auto;
+  width: 60px;
+  border: 1px solid #000;
+  margin: 0 auto;
 }
-
 
 /* 表紙 */
 
 .intro {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    margin-top: 80px;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  margin-top: 80px;
 }
 
 .intro1 {
-    z-index: 3;
-    position: absolute;
-    top: 10%;
-    right: 8%;
-    letter-spacing: 1px;
-    text-align: left;
-    color: white;
+  z-index: 3;
+  position: absolute;
+  top: 10%;
+  right: 8%;
+  letter-spacing: 1px;
+  text-align: left;
+  color: white;
 }
 
 .intro1 h1 {
-    font-size: 140px;
-    font-weight: 700;
-    margin-bottom: 30px;
+  font-size: 140px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .intro p {
-    font-size: 50px;
-    font-weight: 600;
+  font-size: 50px;
+  font-weight: 600;
 }
 
 .sign-up3 {
-    display: inline-block;
-    padding: 5px 15px;
-    margin: 10px 0;
-    color: #333333;
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: 600;
-    color: white;
-    background-color: #828df5;
-    opacity: 0.8;
-    border-radius: 20px;
-    z-index: 5;
-    transition: all 0.3s;
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 10px 0;
+  color: #333333;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  background-color: #828df5;
+  opacity: 0.8;
+  border-radius: 20px;
+  z-index: 5;
+  transition: all 0.3s;
 }
 
 .sign-up3:hover {
-    transform: translate(-2.5px, -2.5px);
-    color: white;
-    box-shadow: 5px 5px 0 0 #000;
+  transform: translate(-2.5px, -2.5px);
+  color: white;
+  box-shadow: 5px 5px 0 0 #000;
 }
 
 #slide ul {
-    padding: 0;
-    position: relative;
+  padding: 0;
+  position: relative;
 }
 
 #slide li {
-    list-style: none;
-    position: absolute;
-    width: 100%;
+  list-style: none;
+  position: absolute;
+  width: 100%;
 }
 
 .cake-intro {
-    width: 100%;
-    height: 790px;
-    object-fit: cover;
-    size: cover;
-    z-index: 1;
-    /* -webkit-animation: cake-intro 5s ease-out 2 both; */
+  width: 100%;
+  height: 790px;
+  object-fit: cover;
+  size: cover;
+  z-index: 1;
+  /* -webkit-animation: cake-intro 5s ease-out 2 both; */
 }
 
-
-/* @-webkit-keyframes cake-intro {
-    0% {
-        -webkit-transform: scale(1) translateY(0);
-        transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-        transform-origin: 50% 16%;
-    }
-    100% {
-        -webkit-transform: scale(1.25) translateY(-15px);
-        transform: scale(1.25) translateY(-15px);
-        -webkit-transform-origin: top;
-        transform-origin: top;
-    }
-} */
-
 #button {
-    padding-top: 730px;
-    text-align: center;
-    margin-bottom: 80px;
+  padding-top: 730px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 #button ul {
-    margin-top: 100px;
-    list-style: none;
-    display: inline-block;
+  margin-top: 100px;
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
 }
 
 #button ul li {
-    float: left;
-    margin-right: 15px;
+  float: left;
+  margin-right: 15px;
 }
 
 #button ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 #button ul li a {
-    text-indent: -9999px;
-    text-decoration: none;
-    display: block;
-    width: 14px;
-    height: 14px;
-    border-radius: 7px;
-    background: #a8dcdb;
+  text-indent: -9999px;
+  text-decoration: none;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background: #a8dcdb;
 }
 
 #button ul li a.target {
-    background: #41afad;
+  background: #41afad;
 }
-
 
 /* 理念 */
 
 .philosophy {
-    height: 80vh;
-    letter-spacing: 1px;
-    margin-top: 150px;
+  height: 80vh;
+  letter-spacing: 1px;
+  margin-top: 150px;
+}
+
+.philosophy .container {
+  padding-left: 12px;
 }
 
 .philosophy h2 {
-    margin-top: 30px;
-    margin-bottom: 40px;
-    font-size: 36px;
-    font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .philosophy p {
-    font-size: 24px;
-    font-weight: 400;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .philosophy-image {
-    width: 100%;
-    border-radius: 50px;
+  width: 100%;
+  border-radius: 50px;
 }
-
 
 /* サンプルコンテンツ */
 
 .content {
-    height: 80vh;
-    margin-top: 150px;
-    margin-bottom: 100px;
+  height: 80vh;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
-
+.content .container {
+  padding-left: 12px;
+}
 .content-p {
-    font-size: 40px;
-    font-weight: 600;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .content2 h2 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
 }
 
 .content h3 {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .content p {
-    font-size: 24px;
-    font-weight: 400;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .contents {
-    width: 100%;
-    border-radius: 50px;
-    height: 500px;
-    size: cover;
-    object-fit: cover;
+  width: 100%;
+  border-radius: 50px;
+  height: 500px;
+  size: cover;
+  object-fit: cover;
 }
 
 .content1-1 {
-    padding-left: 50px;
+  padding-left: 0;
 }
-
 
 /* ログイン者の一覧 */
 
 .skills {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .skill {
-    margin: 80px;
+  margin: 80px;
 }
 
 .skill-name {
-    font-size: 40px;
-    margin: 0 25%;
-    padding-top: 50px;
+  font-size: 40px;
+  margin: 0 25%;
+  padding-top: 50px;
 }
 
 .skill-name1 {
-    margin-right: 60px;
+  margin-right: 60px;
 }
 
 .contributor {
-    margin-right: 20px;
-    font-size: 16px;
+  margin-right: 20px;
+  font-size: 16px;
 }
 
 .skill-image {
-    text-align: center;
-    width: 100%;
-    max-width: 660px;
-    height: 550px;
-    object-fit: cover;
-    size: cover;
-    margin: 0 auto;
-    border-radius: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 660px;
+  height: 550px;
+  object-fit: cover;
+  size: cover;
+  margin: 0 auto;
+  border-radius: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .cake-intro {
-        height: 500px;
-    }
-    .intro {
-        height: 70vh;
-    }
-    .intro1 {
-        position: absolute;
-        right: 4%;
-        top: 8%;
-    }
-    .intro1 h1 {
-        font-size: 80px;
-    }
-    .intro p {
-        font-size: 30px;
-    }
-    .sign-up3 {
-        font-size: 30px;
-    }
-    #button {
-        padding-top: 430px;
-    }
-    #button {
-        padding-top: 430px;
-    }
-    .philosophy {
-        height: 50vh;
-        margin: 50px auto 50px;
-    }
-    .philosophy h2 {
-        font-size: 24px;
-        margin-bottom: 25px;
-    }
-    .philosophy p {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-    .philosophy-image {
-        height: 380px;
-    }
-    .content {
-        height: 60vh;
-        margin: 50px auto 50px;
-    }
-    .content2 h2 {
-        font-size: 24px;
-        font-weight: 600;
-    }
-    .content h3 {
-        font-size: 21px;
-        font-weight: 600;
-    }
-    .content p {
-        font-size: 18px;
-        font-weight: 400;
-    }
-    .skill-name {
-        font-size: 24px;
-        margin: 0 10%;
-    }
-    .contributor {
-        margin-right: 20px;
-        font-size: 15px;
-    }
-    .skill-image {
-        height: 500px;
-        width: 90%;
-    }
+  .cake-intro {
+    height: 500px;
+  }
+  .intro {
+    height: 70vh;
+  }
+  .intro1 {
+    position: absolute;
+    right: 4%;
+    top: 8%;
+  }
+  .intro1 h1 {
+    font-size: 80px;
+  }
+  .intro p {
+    font-size: 30px;
+  }
+  .sign-up3 {
+    font-size: 30px;
+  }
+  #button {
+    padding-top: 430px;
+  }
+  #button {
+    padding-top: 430px;
+  }
+  .philosophy {
+    height: 50vh;
+    margin: 50px auto 50px;
+  }
+  .philosophy h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .philosophy p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .philosophy-image {
+    height: 380px;
+  }
+  .content {
+    height: 60vh;
+    margin: 50px auto 50px;
+  }
+  .content2 h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .content h3 {
+    font-size: 21px;
+    font-weight: 600;
+  }
+  .content p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .skill-name {
+    font-size: 24px;
+    margin: 0 10%;
+  }
+  .contributor {
+    margin-right: 20px;
+    font-size: 15px;
+  }
+  .skill-image {
+    height: 500px;
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .intro {
-        height: 49vh;
-    }
-    .cake-intro {
-        height: 350px;
-    }
-    .intro1 {
-        position: absolute;
-        right: 2%;
-        top: 15%;
-    }
-    .intro1 h1 {
-        font-size: 50px;
-    }
-    .intro p {
-        font-size: 20px;
-    }
-    .sign-up3 {
-        font-size: 20px;
-    }
-    #button {
-        padding-top: 255px;
-    }
-    .philosophy {
-        height: 65vh;
-        margin: 50px auto 90px;
-    }
-    .philosophy h2 {
-        font-size: 20px;
-    }
-    .philosophy p {
-        font-size: 15px;
-    }
-    .content {
-        height: 100%;
-        margin: 50px auto 50px;
-    }
-    .contents {
-        margin-bottom: 30px;
-        height: 300px;
-    }
-    .content2 h2 {
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .content h3 {
-        font-size: 18px;
-        font-weight: 600;
-    }
-    .content p {
-        font-size: 15px;
-        font-weight: 400;
-    }
-    .skill-name {
-        font-size: 20px;
-        margin: 0;
-    }
-    .contributor {
-        margin-right: 20px;
-        font-size: 14px;
-    }
-    .skill-image {
-        height: 250px;
-        width: 100%;
-    }
+  .intro {
+    height: 49vh;
+  }
+  .cake-intro {
+    height: 350px;
+  }
+  .intro1 {
+    position: absolute;
+    right: 2%;
+    top: 15%;
+  }
+  .intro1 h1 {
+    font-size: 50px;
+  }
+  .intro p {
+    font-size: 20px;
+  }
+  .sign-up3 {
+    font-size: 20px;
+  }
+  #button {
+    padding-top: 255px;
+  }
+  .philosophy {
+    height: 65vh;
+    margin: 50px auto 90px;
+  }
+  .philosophy h2 {
+    font-size: 20px;
+  }
+  .philosophy p {
+    font-size: 15px;
+  }
+  .content {
+    height: 100%;
+    margin: 50px auto 50px;
+  }
+  .contents {
+    margin-bottom: 30px;
+    height: 300px;
+  }
+  .content2 h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .content h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .content p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .skill-name {
+    font-size: 20px;
+    margin: 0;
+  }
+  .contributor {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  .skill-image {
+    height: 250px;
+    width: 100%;
+  }
 }
