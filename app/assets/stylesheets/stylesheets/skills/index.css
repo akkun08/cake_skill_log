@@ -347,6 +347,12 @@ hr {
     font-size: 15px;
     font-weight: 400;
   }
+  .skill {
+    margin: 30px;
+  }
+  .skill > div {
+    padding-left: 12px;
+  }
   .skill-name {
     font-size: 20px;
     margin: 0;
