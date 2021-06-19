@@ -13,7 +13,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  . footer-first > p {
+  .footer-first > p {
     margin-top: -10px;
   }
 }
